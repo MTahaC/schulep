@@ -1,0 +1,86 @@
+/*? table start */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    border-style: outset;
+}
+
+td,
+th {
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+#ayri {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    border: #dddddd;
+    background-color: #dddddd;
+}
+
+input {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    border: #ffffff;
+    background-color: #ffffff;
+}
+
+#color1 {
+    background-color: aqua;
+}
+
+td:nth-child(2) {
+    background-color: #dddddd;
+}
+
+td:nth-child(7) {
+    background-color: #dddddd;
+}
+
+/*? table end */
+
+/*! button start */
+button {
+    position: relative;
+    background-color: #00d0ff;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: #90d6ee;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+/*! button end */
