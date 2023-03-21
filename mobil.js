@@ -26,7 +26,7 @@
 //     document.getElementById('btn').addEventListener('click', addMovie);
 // });
 
-//? rechnen start
+//? x rechnen start
 // function add() {
 //     a = parseInt(document.getElementById('a').value);
 //     b = parseInt(document.getElementById('b').value);
@@ -109,12 +109,34 @@ function add5() {
 }
 //! E satir end
 
-function carpanlar(){ 
+function rechnen(){ 
     add1(); 
     add2(); 
     add3(); 
     add4(); 
-    add5(); 
+    add5();
+    addx1(); 
 }
 
-//? rechnen end
+//? x rechnen end
+
+//? + rechnen start
+
+//? + rechnen start
+
+//! X satir start
+
+function addx1() {
+    z1 = parseInt(document.getElementById('z1').value);
+    z2 = parseInt(document.getElementById('z2').value);
+    z3 = parseInt(document.getElementById('z3').value);
+    z4 = parseInt(document.getElementById('z4').value);
+    z5 = parseInt(document.getElementById('z5').value);
+
+    x1 = z1 + z2 + z3 + z4 + z5;
+    document.getElementById('x1').value = x1;
+}
+
+//! X satir end
+
+//? + rechnen end
