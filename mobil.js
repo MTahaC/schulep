@@ -140,3 +140,7 @@ function addx1() {
 //! X satir end
 
 //? + rechnen end
+
+//? diagramm start
+
+//? diagramm end

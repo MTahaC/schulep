@@ -7,6 +7,8 @@
     <title>Schul Projeckt</title>
     <link rel="stylesheet" href="style.css">
     <script src="mobil.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 </head>
 
 
@@ -90,11 +92,11 @@
                     <td><input type="text" name="z5" id="z5" /></td>
                 </tr>
 
-                
-            <tr>
-                <td id="color1"><b>LÖSUNG +</b></td>
-                <td><input type="text" name="x1" id="x1" /></td>
-            </tr>
+
+                <tr>
+                    <td id="color1"><b>LÖSUNG +</b></td>
+                    <td><input type="text" name="x1" id="x1" /></td>
+                </tr>
 
                 <!-- <div class="formBox">
                     <button id="btn">Click to Add</button>
@@ -103,6 +105,37 @@
             </form>
     </div>
     <!--? tabelle end -->
+
+    <!--! diagramm start -->
+
+    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+
+    <script>
+        var xValues = ["Schule A", "Schule B", "Schule C", "Schulzentrum"];
+        var yValues = [55, 210, 340, 80];
+        var barColors = ["#000080", "#000080", "#000080", "#008040"];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Müllverbrauch pro Schüler (im Vergleich zu anderen Schulen)"
+                }
+            }
+        });
+
+    </script>
+
+    <!--! diagramm end -->
 
     <!-- <style>
             .formBox{

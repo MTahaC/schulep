@@ -4,6 +4,7 @@ table {
     border-collapse: collapse;
     width: 50%;
     border-style: outset;
+    background-color: #00d0ff;
 }
 
 td,
@@ -30,11 +31,11 @@ input {
 }
 
 #color1 {
-    background-color: aqua;
+    background-color: #707070;
 }
 
 td:nth-child(2) {
-    background-color: #dddddd;
+    background-color: #707070;
 }
 
 td:nth-child(7) {
@@ -81,3 +82,15 @@ button:active:after {
     transition: 0s
 }
 /*! button end */
+
+/*? diagramm start */
+
+#myChart{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left: 50%;
+    border-style: outset;
+    position: absolute;
+}
+
+/*? diagramm end */
