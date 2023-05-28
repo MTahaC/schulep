@@ -107,34 +107,31 @@
     <!--? tabelle end -->
 
     <!--! diagramm start -->
+    <div class="diagramm">
+        <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
 
-    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+        <script>
 
-    <script>
-        var xValues = ["Schule A", "Schule B", "Schule C", "Schulzentrum"];
-        var yValues = [55, 210, 340, 80];
-        var barColors = ["#000080", "#000080", "#000080", "#008040"];
 
-        new Chart("myChart", {
-            type: "bar",
-            data: {
-                labels: xValues,
-                datasets: [{
-                    backgroundColor: barColors,
-                    data: yValues
-                }]
-            },
-            options: {
-                legend: { display: false },
-                title: {
-                    display: true,
-                    text: "Müllverbrauch pro Schüler (im Vergleich zu anderen Schulen)"
+            new Chart("myChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Müllverbrauch pro Schüler (im Vergleich zu anderen Schulen)"
+                    }
                 }
-            }
-        });
-
-    </script>
-
+            });
+        </script>
+    </div>
     <!--! diagramm end -->
 
     <!-- <style>

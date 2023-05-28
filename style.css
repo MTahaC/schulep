@@ -85,12 +85,12 @@ button:active:after {
 
 /*? diagramm start */
 
-#myChart{
+.diagramm{
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    margin-left: 50%;
+    margin-right: 50%;
     border-style: outset;
-    position: absolute;
+    position: relative;
 }
 
 /*? diagramm end */

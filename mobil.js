@@ -38,6 +38,11 @@
 //     document.getElementById('z').value = z;
 // }
 
+var xValues = ["Schule A", "Schule B", "Schule C", "Schulzentrum"];
+var yValues = [55, 210, 340];
+var barColors = ["#000080", "#000080", "#000080", "#008040"];
+
+
 
 //! A satir start
 function add1() {
@@ -134,8 +139,22 @@ function addx1() {
     z1 = Number(document.getElementById('z1').value);
 
     x1 = z1 + z2 + z3 + z4 + z5;
+    
+    // console.log(x1);
+    // console.log(yValues);
+    // yValues.push(x1);
+    // console.log(yValues);
+    yValues[yValues.length - 1] = x1;
     document.getElementById('x1').value = x1;
+    updateChart();
 }
+
+function updateChart() {
+    var chart = Chart.getChart("myChart");
+    chart.data.datasets[0].data = yValues;
+    chart.update();
+}
+
 
 //! X satir end
 
